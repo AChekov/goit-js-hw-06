@@ -15,13 +15,13 @@ const images = [
 
 const galleryItemEl = document.querySelector(".gallery");
 
-// const makeGallery = images
-//   .map(
-//     ({ url, alt }) =>
-//       `<li class="gallery__item"><img src="${url}" alt="${alt}" class="gallery__image"/></li>`
-//   )
-//   .join("");
+const makeGallery = images
+  .map(
+    ({ url, alt }) =>
+      `<li class="gallery__item"><img src="${url}" alt="${alt}" class="gallery__image"/></li>`
+  )
+  .join("");
 
-// galleryItemEl.insertAdjacentHTML("afterbegin", makeGallery);
+galleryItemEl.insertAdjacentHTML("afterbegin", makeGallery);
 
-// galleryItemEl.classList.add("gallery__list", "list");
+galleryItemEl.classList.add("gallery__list", "list");
